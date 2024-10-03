@@ -1,10 +1,18 @@
 package Tarea1;
-//esta clase ya no es abstracta pq debe imple,entar consumir (lo mismo para Sprote y Fanta)
+
 public class Cocacola extends Bebida {
-    public Cocacola(int serie){
+
+    /**
+     * @param serie el número de serie único
+     */
+    public Cocacola(int serie) {
         super(serie);
     }
 
+    /**
+     * Método que simula el consumo de la Cocacola.
+     * @return una cadena que describe el consumo
+     */
     @Override
     public String consumir() {
         return "glupglup Cocacola";

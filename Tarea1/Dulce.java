@@ -1,9 +1,17 @@
 package Tarea1;
-//lo mismo que clase Bebida
 
+/**
+ * Clase abstracta {@code Dulce} que representa un producto de tipo dulce.
+ * Hereda de la clase {@code Producto}, por lo que todos los dulces tienen un número
+ * de serie que es asignado al ser creados.
+ */
 public abstract class Dulce extends Producto {
-    public Dulce(int serie){
+
+    /**
+     * @param serie el número de serie único del dulce
+     */
+    public Dulce(int serie) {
         super(serie);
     }
-
 }
+

@@ -1,17 +1,31 @@
 package Tarea1;
 
+/**
+ * Clase abstracta {@code Producto} que representa un producto en general.
+ * Los productos se identifican por un número de serie, el cual es proporcionado
+ * al momento de su creación
+ */
 public abstract class Producto {
-    //Los productos solos se les entregara serie pq el precio estara en los enum
+    // Los productos solo se les entregará serie porque el precio estará en los enum
     protected int serie;
-    public Producto(int serie){
-        this.serie=serie;
+
+    /**
+     * @param serie el número de serie único del producto
+     */
+    public Producto(int serie) {
+        this.serie = serie;
     }
-    //getter de serie
-    public int getSerie(){
+
+    /**
+     * @return el número de serie del producto
+     */
+    public int getSerie() {
         return serie;
     }
-    //este metodo se debe implementar segun si es bebida o dulce (es como el beber() del pa3p)
+
+    /**
+     * Método abstracto que debe ser implementado por las clases que extiendan
+     * {@code Producto}
+     */
     public abstract String consumir();
-
-
 }

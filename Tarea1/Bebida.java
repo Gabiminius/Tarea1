@@ -1,9 +1,16 @@
 package Tarea1;
 
-//la hice abstracta pq consumir se implementara en cada tipo de bebida o dulce
-abstract class Bebida extends Producto{
-    public Bebida(int serie){
+/**
+ * La clase abstracta {@code Bebida} representa un producto de tipo bebida.
+ * Hereda de la clase {@code Producto}, por lo que todas las bebidas tienen un número
+ * de serie que es asignado al ser creadas.
+ */
+abstract class Bebida extends Producto {
+
+    /**
+     * @param serie el número de serie único de la bebida
+     */
+    public Bebida(int serie) {
         super(serie);
     }
-
 }
