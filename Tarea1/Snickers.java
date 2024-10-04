@@ -10,7 +10,7 @@ public class Snickers extends Dulce {
     }
 
     /**
-     * Método que simula el consumo de las galletas.
+     * Método que simula el consumo de los Snickers
      * @return una cadena que describe el consumo
      */
     @Override
