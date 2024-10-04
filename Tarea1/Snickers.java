@@ -1,11 +1,11 @@
 package Tarea1;
 
-public class Cookies extends Dulce {
+public class Snickers extends Dulce {
 
     /**
      * @param serie el número de serie único
      */
-    public Cookies(int serie) {
+    public Snickers(int serie) {
         super(serie);
     }
 
@@ -15,6 +15,6 @@ public class Cookies extends Dulce {
      */
     @Override
     public String consumir() {
-        return "ñam Cookies";
+        return "ñam Snickers";
     }
 }
